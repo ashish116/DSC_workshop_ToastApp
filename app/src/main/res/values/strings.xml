@@ -2,5 +2,8 @@
     <string name="app_name">ToastApp</string>
     <string name="main_msg">Toast App for DSC workshop</string>
     <string name="msg">Developer Student Club is an initiative by Google Developers to train university students in mobile and web technologies..</string>
+    <string name="Toast">Generate Toast</string>
+    <string name="desc">DSC logo</string>
+
 
 </resources>

@@ -11,8 +11,9 @@
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="30dp"
         android:layout_gravity="center_horizontal"
         android:textSize="10pt"
         tools:text="@string/main_msg" />
@@ -20,16 +21,19 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_marginTop="50dp"
-        android:layout_height="250dp"
+        android:layout_marginTop="15dp"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:contentDescription="@string/desc"
         app:srcCompat="@drawable/dsc"
         />
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="25dp"
         android:layout_marginRight="30dp"
         android:layout_gravity="center_horizontal"
         android:textStyle="bold"
@@ -39,11 +43,12 @@
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="90dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="40dp"
+
         android:layout_gravity="center"
-        android:onClick="disp_toast"
-        android:text="Generate Toast" />
+        android:text="@string/Toast" />
 
 
 </LinearLayout>
