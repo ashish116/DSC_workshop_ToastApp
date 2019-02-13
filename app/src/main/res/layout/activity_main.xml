@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#DAF7A6"
     tools:context=".MainActivity"
     android:orientation="vertical">
 
@@ -12,31 +13,37 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:layout_marginRight="50dp"
-        android:layout_marginBottom="50dp"
-        android:layout_marginLeft="50dp"
+        android:layout_gravity="center_horizontal"
         android:textSize="10pt"
         tools:text="@string/main_msg" />
         <!--android:text="@string/main_msg"-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/dsc"
+        />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/msg"
-        android:layout_marginTop="150dp"
         android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
         android:layout_marginRight="30dp"
-        android:textSize="7pt"
-        />
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:text="@string/msg"
+        android:textSize="8pt" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="250dp"
-        android:layout_margin_right="100dp"
+        android:layout_marginTop="90dp"
+        android:layout_gravity="center"
         android:onClick="disp_toast"
-        android:text="Button" />
+        android:text="Generate Toast" />
 
 
 </LinearLayout>
