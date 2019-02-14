@@ -9,19 +9,14 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_marginTop="30dp"
-        android:layout_gravity="center_horizontal"
-        android:textSize="10pt"
-        tools:text="@string/main_msg" />
-        <!--android:text="@string/main_msg"-->
+
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:layout_marginTop="35dp"
         android:layout_height="0dp"
         android:layout_weight="3"
         android:contentDescription="@string/desc"
@@ -36,6 +31,7 @@
         android:layout_marginTop="25dp"
         android:layout_marginRight="30dp"
         android:layout_gravity="center_horizontal"
+        android:gravity="center"
         android:textStyle="bold"
         android:text="@string/msg"
         android:textSize="8pt" />
@@ -44,9 +40,10 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="0.6"
+        android:gravity="center"
         android:layout_marginBottom="40dp"
-
+        android:background="#529F1E"
         android:layout_gravity="center"
         android:text="@string/Toast" />
 
