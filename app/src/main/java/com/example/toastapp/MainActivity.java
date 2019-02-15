@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-
+    int count= 0;
     Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +17,9 @@ public class MainActivity extends AppCompatActivity {
         Button button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v)  {
-                Toast.makeText(getBaseContext(), "Toast Generated its done!" , Toast.LENGTH_SHORT ).show();
+                count += 1;
+
+                Toast.makeText(getBaseContext(), "Toast "+ count + " Generated its done!" , Toast.LENGTH_SHORT ).show();
             }
         });
 
